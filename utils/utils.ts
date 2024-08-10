@@ -4,7 +4,7 @@ import { CarProps } from "@/types";
 
 export async function fetchCars(){
     const headers = {
-        'X-RapidAPI-key': process.env.RAPID_API_KEY,
+        'X-RapidAPI-key': process.env.RAPID_API_KEY as string,
         'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com',
     }
 
